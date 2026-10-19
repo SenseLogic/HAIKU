@@ -1,0 +1,87 @@
+// -- CLASSES
+
+.value-picker
+{
+    position: relative;
+
+    user-select: none;
+}
+
+.value-picker .track
+{
+    position: absolute;
+    top: ( valuePickerSliderSize * 0.5 );
+    transform: translateY( -50% );
+
+    height: valuePickerTrackHeight;
+    width: 100%;
+    border-radius: ( valuePickerTrackHeight / 2 );
+
+    background: valuePickerTrackBackgroundColor;
+}
+
+.value-picker .frame
+{
+    position: relative;
+
+    margin-right: valuePickerSliderSize;
+    height: valuePickerSliderSize;
+}
+
+.value-picker .range
+{
+    position: absolute;
+    top: ( valuePickerSliderSize * 0.5 );
+    transform: translateY( -50% );
+
+    height: valuePickerTrackHeight;
+    border-radius: ( valuePickerTrackHeight / 2 );
+
+    background: valuePickerRangeBackgroundColor;
+}
+
+.value-picker .slider
+{
+    position: absolute;
+    top: ( valuePickerSliderSize * 0.5 );
+    transform: translateY( -50% );
+
+    height: valuePickerSliderSize;
+    width: valuePickerSliderSize;
+    border: valuePickerSliderBorderWidth solid valuePickerSliderBorderColor;
+    border-radius: 50%;
+
+    background: valuePickerSliderBackgroundColor;
+
+    cursor: pointer;
+}
+
+.value-picker .text
+{
+    position: relative;
+
+    margin-top: valuePickerTextMarginTop;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-size: valuePickerTextFontSize;
+    font-weight: valuePickerTextFontWeight;
+    color: valuePickerTextColor;
+}
+
+.value-picker .left-text
+{
+}
+
+.value-picker .middle-text
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX( -50% );
+}
+
+.value-picker .right-text
+{
+}

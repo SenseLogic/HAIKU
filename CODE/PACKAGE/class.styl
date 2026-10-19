@@ -1,0 +1,230 @@
+// -- CLASSES
+
+.input,
+.textarea,
+.select
+{
+    width: 100%;
+    border: 1px solid inputBorderColor;
+    border-radius: inputBorderRadius;
+    padding: inputPadding;
+
+    display: block;
+
+    background: whiteColor;
+
+    transition: border 0.4s, outline 0.4s;
+}
+
+.input:focus,
+.textarea:focus,
+.select:focus
+{
+    outline: 1px solid inputFocusOutlineColor;
+    border: 1px solid inputFocusBorderColor;
+}
+
+.button,
+.primary-button,
+.primary-outline-button
+{
+    border-radius: buttonBorderRadius;
+    padding: buttonPadding;
+
+    cursor: pointer;
+}
+
+.primary-button
+{
+    background-color: primaryBackgroundColor;
+
+    color: whiteColor;
+}
+
+.primary-outline-button
+{
+    border: 1px solid primaryBorderColor;
+
+    background-color: whiteColor;
+}
+
+.dropdown
+{
+    border: 1px solid inputBorderColor;
+
+    background-color: whiteColor;
+}
+
+.dropdown-option
+{
+    border-bottom: 1px solid inputBorderColor;
+    padding: 0.5rem;
+}
+
+.input
+{
+    border: 1px solid inputBorderColor;
+    padding: 0.5rem;
+}
+
+.email-input
+{
+    border: 1px solid inputBorderColor;
+    padding: 0.5rem;
+}
+
+.search-input
+{
+    position: relative;
+
+    border: 1px solid inputBorderColor;
+    padding: 0.5rem;
+}
+
+.search-input-icon
+{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+.select
+{
+}
+
+.select-option
+{
+    padding: 0.5rem;
+}
+
+.range-slider
+{
+    -webkit-appearance: none;
+    width: 100%;
+
+    background: grayColor700;
+}
+
+.range-slider-handle
+{
+    -webkit-appearance: none;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+
+    background: #666;
+}
+
+.range-slider-handle-icon
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.date-input
+{
+    border: 1px solid inputBorderColor;
+    padding: 0.5rem;
+}
+
+.date-input-icon
+{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+.time-input
+{
+    border: 1px solid inputBorderColor;
+    padding: 0.5rem;
+}
+
+.checkbox-input
+{
+}
+
+.checkbox-input-icon
+{
+}
+
+.radio-button-input
+{
+}
+
+.radio-button-icon
+{
+}
+
+.accordeon
+{
+}
+
+.accordeon-content
+{
+}
+
+.card
+{
+    border: 1px solid grayBorderColor;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.progress-bar
+{
+    height: 1rem;
+    width: 100%;
+
+    background: grayColor700;
+}
+
+.bullet-point-list
+{
+}
+
+.bullet-point-element
+{
+}
+
+.button
+{
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+
+    background: primaryColor;
+
+    color: whiteColor;
+}
+
+.outline-button
+{
+    border: 1px solid primaryColor;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+
+    background: transparent;
+
+    color: primaryColor;
+}
+
+.animated-loading-icon
+{
+    border: 0.25rem solid grayColor700;
+    border-top-color: primaryColor;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin
+{
+    100%
+    {
+        transform: rotate( 360deg );
+    }
+}

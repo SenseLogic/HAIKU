@@ -1,0 +1,142 @@
+// -- CLASSES
+
+.date-picker
+{
+    display: flex;
+}
+
+.date-picker .calendar-list
+{
+    display: flex;
+    gap: 2rem;
+
+    user-select: none;
+}
+
+.date-picker .calendar
+{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.date-picker .month-grid
+{
+    border-bottom: datePickerMonthBorderWidth solid datePickerMonthBorderColor;
+    padding-bottom: 0.5rem;
+
+    display: grid;
+    grid-template-rows: 1.5rem;
+    grid-template-columns: auto 1fr auto;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.date-picker .month-name
+{
+    font-size: datePickerMonthNameFontSize;
+    font-weight: datePickerMonthNameFontWeight;
+    color: datePickerMonthNameColor;
+}
+
+.date-picker .month-button
+{
+    border: none;
+
+    background-color: transparent;
+
+    font-size: datePickerMonthButtonFontSize;
+    font-weight: datePickerMonthButtonFontWeight;
+    color: datePickerMonthButtonColor;
+
+    cursor: pointer;
+}
+
+.date-picker .month-button:hover
+{
+    color: datePickerMonthButtonHoverColor;
+}
+
+.date-picker .prior-month-button
+{
+    padding-right: 1rem;
+}
+
+.date-picker .next-month-button
+{
+    padding-left: 1rem;
+}
+
+.date-picked .month
+{
+}
+
+.date-picker .day-grid
+{
+    display: grid;
+    grid-template-rows: 1.5rem;
+    grid-template-columns: repeat( 7, 1fr );
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.date-picker .weekday
+{
+    font-weight: datePickerWeekdayFontWeight;
+    color: datePickerWeekdayColor;
+}
+
+.date-picker .day
+{
+    width: 1.8rem;
+    border: datePickerSelectedDayBorderWidth solid transparent;
+    border-radius: 50%;
+
+    font-weight: datePickerDayFontWeight;
+    text-align: center;
+    color: datePickerDayColor;
+
+    cursor: pointer;
+}
+
+.date-picker .day.is-grayed
+{
+    font-weight: datePickerGrayedDayFontWeight;
+    color: datePickerGrayedDayColor;
+
+    cursor: auto;
+}
+
+.date-picker .day.is-inside:not(.is-grayed)
+{
+    font-weight: datePickerInsideDayFontWeight;
+    color: datePickerInsideDayColor;
+}
+
+.date-picker .day.is-selected:not(.is-grayed)
+{
+    border: datePickerSelectedDayBorderWidth solid datePickerSelectedDayBorderColor;
+    border-radius: 50%;
+
+    font-weight: datePickerSelectedDayFontWeight;
+    color: datePickerSelectedDayColor;
+}
+
+.date-picker .day.is-first:not(.is-grayed)
+{
+}
+
+.date-picker .day.is-last:not(.is-grayed)
+{
+}
+
+.date-picker .day:hover:not(.is-grayed)
+{
+    color: datePickerDayHovercolor;
+}

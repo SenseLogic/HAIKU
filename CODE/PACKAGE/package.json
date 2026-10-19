@@ -1,0 +1,30 @@
+{
+    "name": "senselogic-haiku",
+    "description": "Stylable UI components.",
+    "version": "0.0.1",
+    "author": "Eric Pelzer <ecstatic.coder@gmail.com>",
+    "license": "LGPL-3.0-only",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/senselogic/HAIKU.git"
+    },
+    "bugs": {
+        "url": "https://github.com/senselogic/HAIKU/issues"
+    },
+    "homepage": "https://github.com/senselogic/HAIKU",
+    "type": "module",
+    "main": "src/haiku.styl",
+    "files": [
+        "*.styl",
+        "*.marko",
+        "README.md"
+    ],
+    "devDependencies": {
+        "stylus": "^0.60.0"
+    },
+    "keywords": [
+        "marko",
+        "ui",
+        "components"
+    ]
+}
